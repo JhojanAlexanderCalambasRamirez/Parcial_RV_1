@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -14,12 +14,11 @@ public class UIManager : MonoBehaviour
     public GameObject panelDatosJugador;
     public GameObject panelDatosJugadores;
 
-    [Header("UI Inicio Sesi�n")]
+    [Header("UI Inicio Sesión")]
     public TMP_InputField inputNombre;
     public Button botonIniciar;
 
     [Header("UI Juego")]
-    public Slider barraEnergia;
     public TMP_Text textoPuntaje;
     public TMP_Text textoCuentaRegresiva;
 
@@ -37,8 +36,6 @@ public class UIManager : MonoBehaviour
     public TMP_Text textoTop3;
     public Button botonRegresarPanelDatosJugador;
 
-    private float energiaMax = 100f;
-    private float energiaActual;
     private float tiempoRestante = 40f;
     private int puntaje;
     private bool juegoEnCurso = false;
@@ -52,43 +49,33 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        // Configurar estado inicial de los paneles
+        Debug.Log("🎮 Inicio del juego - UIManager cargado.");
+
         panelInicioSesion.SetActive(true);
         panelJuego.SetActive(false);
         panelDatosJugador.SetActive(false);
         panelDatosJugadores.SetActive(false);
 
-        // Asignar eventos a los botones
         botonIniciar.onClick.AddListener(IniciarJuego);
         botonSalirInicio.onClick.AddListener(VolverInicio);
         botonVerDatosJugadores.onClick.AddListener(MostrarPanelDatosJugadores);
         botonRegresarPanelDatosJugador.onClick.AddListener(VolverPanelDatosJugador);
         botonRegresarInicio.onClick.AddListener(VolverInicio);
 
-        // Configurar barra de energ�a
-        energiaActual = energiaMax;
-        barraEnergia.maxValue = energiaMax;
-        barraEnergia.value = energiaActual;
         puntaje = 0;
-        textoPuntaje.text = $"{puntaje}";
+        textoPuntaje.text = puntaje.ToString();
 
-        // Cargar puntuaciones previas
         CargarPuntuaciones();
-
-        // Reducir energ�a cada segundo
-        InvokeRepeating("ReducirEnergiaPorTiempo", 1f, 1f);
     }
 
     void Update()
     {
         if (juegoEnCurso)
         {
-            // Reducir el tiempo restante
             tiempoRestante -= Time.deltaTime;
             textoCuentaRegresiva.text = Mathf.CeilToInt(tiempoRestante).ToString();
 
-            // Si el tiempo llega a 0 o la energ�a se agota, termina el juego
-            if (tiempoRestante <= 0 || energiaActual <= 0)
+            if (tiempoRestante <= 0 || ControladorSlider.instancia.GetEnergiaActual() <= 0)
             {
                 TerminarJuego();
             }
@@ -104,67 +91,57 @@ public class UIManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(inputNombre.text))
         {
-            Debug.Log("Ingrese un nombre v�lido.");
+            Debug.LogWarning("⚠️ ¡Debe ingresar un nombre antes de jugar!");
             return;
         }
 
-        // Activar panel de juego y desactivar el de inicio
+        Debug.Log($"▶️ Juego iniciado por {inputNombre.text}.");
+
         panelInicioSesion.SetActive(false);
         panelJuego.SetActive(true);
         juegoEnCurso = true;
         tiempoRestante = 40f;
-        energiaActual = energiaMax;
         puntaje = 0;
-        textoPuntaje.text = $"{puntaje}";
-        barraEnergia.value = energiaActual;
+        textoPuntaje.text = puntaje.ToString();
 
-        GameController.instancia.IniciarJuego(inputNombre.text);
+        ControladorSlider.instancia.RestablecerEnergia();
     }
 
     public void RecogerBarrita()
     {
-        energiaActual = Mathf.Min(energiaActual + 5f, energiaMax);
-        barraEnergia.value = energiaActual;
-        puntaje += 1;
-        textoPuntaje.text = $"{puntaje}";
-        Debug.Log($"Energ�a actual: {energiaActual}, Puntaje: {puntaje}");
+        Debug.Log("✅ Barrita recogida - Aumentando energía y puntaje.");
+
+        ControladorSlider.instancia.AumentarEnergia(5f);  // Aumentar energía
+        puntaje += 1;  // Sumar puntaje
+        textoPuntaje.text = puntaje.ToString();  // Actualizar TMP del puntaje
+
+        Debug.Log($"🔋 Energía total: {ControladorSlider.instancia.GetEnergiaActual()}, Puntaje: {puntaje}");
     }
+
 
     public void ColisionObstaculo()
     {
         float danio = Random.Range(10f, 20f);
-        energiaActual -= danio;
-        barraEnergia.value = energiaActual;
-        Debug.Log($"Da�o recibido: {danio}, Energ�a restante: {energiaActual}");
-    }
-    private void ReducirEnergiaPorTiempo()
-    {
-        if (juegoEnCurso)
-        {
-            energiaActual -= 1f;
-            barraEnergia.value = energiaActual;
-        }
+        Debug.Log($"❌ Colisión con Obstáculo - Daño recibido: {danio}");
+        ControladorSlider.instancia.ReducirEnergia(danio);
     }
 
     public void TerminarJuego()
     {
         juegoEnCurso = false;
+        Debug.Log("🏁 Juego terminado - Energía agotada o tiempo finalizado.");
 
-        string nombre = GameController.instancia.GetNombreJugador();
-        float distancia = GameController.instancia.GetDistancia();
+        string nombre = inputNombre.text;
+        float distancia = 0;
         int barritas = puntaje;
 
-        // Mostrar los datos en Panel_DatosJugador
-        textoNombreJugador.text = $"{nombre}";
+        textoNombreJugador.text = nombre;
         textoDistanciaJugador.text = $"{distancia:F2}m";
-        textoBarritasJugador.text = $"{barritas}";
+        textoBarritasJugador.text = barritas.ToString();
 
         GuardarPuntuacion(nombre, distancia, barritas);
-
         panelJuego.SetActive(false);
         panelDatosJugador.SetActive(true);
-
-        Debug.Log("Juego terminado: Sin energ�a.");
     }
 
     public void VolverInicio()
@@ -191,7 +168,6 @@ public class UIManager : MonoBehaviour
     {
         PuntuacionDatos nuevaPuntuacion = new PuntuacionDatos { nombre = nombre, distancia = distancia, barritas = barritas };
         listaPuntuaciones.Add(nuevaPuntuacion);
-
         listaPuntuaciones.Sort((a, b) => b.distancia.CompareTo(a.distancia));
 
         if (listaPuntuaciones.Count > 3)
@@ -216,20 +192,22 @@ public class UIManager : MonoBehaviour
 
     void MostrarRanking()
     {
+        Debug.Log("📊 Mostrando ranking...");
+
         if (listaPuntuaciones.Count > 0)
-            textoTop1.text = $"{listaPuntuaciones[0].nombre} {listaPuntuaciones[0].distancia:F2} {listaPuntuaciones[0].barritas}";
+            textoTop1.text = $"{listaPuntuaciones[0].nombre} {listaPuntuaciones[0].distancia:F2}m {listaPuntuaciones[0].barritas}";
         else
-            textoTop1.text = " ";
+            textoTop1.text = "---";
 
         if (listaPuntuaciones.Count > 1)
-            textoTop2.text = $"{listaPuntuaciones[1].nombre} {listaPuntuaciones[1].distancia:F2} {listaPuntuaciones[1].barritas}";
+            textoTop2.text = $"{listaPuntuaciones[1].nombre} {listaPuntuaciones[1].distancia:F2}m {listaPuntuaciones[1].barritas}";
         else
-            textoTop2.text = " ";
+            textoTop2.text = "---";
 
         if (listaPuntuaciones.Count > 2)
-            textoTop3.text = $"{listaPuntuaciones[2].nombre} {listaPuntuaciones[2].distancia:F2} {listaPuntuaciones[2].barritas}";
+            textoTop3.text = $"{listaPuntuaciones[2].nombre} {listaPuntuaciones[2].distancia:F2}m {listaPuntuaciones[2].barritas}";
         else
-            textoTop3.text = " ";
+            textoTop3.text = "---";
     }
 }
 
@@ -246,3 +224,4 @@ public class PuntuacionLista
 {
     public List<PuntuacionDatos> puntuaciones;
 }
+
