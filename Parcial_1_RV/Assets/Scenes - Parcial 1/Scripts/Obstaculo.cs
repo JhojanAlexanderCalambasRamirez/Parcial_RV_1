@@ -1,30 +1,14 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class Obstaculo : MonoBehaviour
 {
-    private Renderer renderObstaculo;
-    private Color colorOriginal;
-
-    void Start()
-    {
-        renderObstaculo = GetComponent<Renderer>();
-        colorOriginal = renderObstaculo.material.color;
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Jugador colisionÛ con Obst·culo. Aplicando daÒo.");
-            UIManager.instancia.ColisionObstaculo();
-            ActivarEfecto();
+            float danio = Random.Range(10f, 20f);
+            Debug.Log($"‚ùå Colisi√≥n con Obst√°culo detectada. Da√±o recibido: {danio}");
+            ControladorSlider.instancia.ReducirEnergia(danio);
         }
-    }
-
-    public void ActivarEfecto()
-    {
-        Color nuevoColor = colorOriginal;
-        nuevoColor.a = 0.5f;
-        renderObstaculo.material.color = nuevoColor;
     }
 }

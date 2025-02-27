@@ -1099,7 +1099,6 @@ GameObject:
   - component: {fileID: 397114795}
   - component: {fileID: 397114794}
   - component: {fileID: 397114798}
-  - component: {fileID: 397114799}
   m_Layer: 0
   m_Name: Barra
   m_TagString: Barrita
@@ -1205,28 +1204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f42331e5c7104140941cece6338a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiaRecuperada: 5
---- !u!65 &397114799
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397114793}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &527516710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2563,6 @@ GameObject:
   - component: {fileID: 817358980}
   - component: {fileID: 817358979}
   - component: {fileID: 817358983}
-  - component: {fileID: 817358984}
   m_Layer: 0
   m_Name: Barra
   m_TagString: Barrita
@@ -2692,28 +2668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f42331e5c7104140941cece6338a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiaRecuperada: 5
---- !u!65 &817358984
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817358978}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &822712527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,6 +3635,7 @@ GameObject:
   - component: {fileID: 1194990648}
   - component: {fileID: 1194990647}
   - component: {fileID: 1194990651}
+  - component: {fileID: 1194990652}
   m_Layer: 0
   m_Name: Jugador_Atleta
   m_TagString: Player
@@ -3791,6 +3746,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 5
   velocidadRotacion: 100
+--- !u!54 &1194990652
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194990646}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 1
 --- !u!1 &1260698860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,7 +4107,6 @@ GameObject:
   - component: {fileID: 1296485548}
   - component: {fileID: 1296485547}
   - component: {fileID: 1296485551}
-  - component: {fileID: 1296485552}
   m_Layer: 0
   m_Name: Barra
   m_TagString: Barrita
@@ -4231,28 +4212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f42331e5c7104140941cece6338a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiaRecuperada: 5
---- !u!65 &1296485552
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296485546}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1328022168
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,7 +4797,6 @@ GameObject:
   - component: {fileID: 1413822772}
   - component: {fileID: 1413822771}
   - component: {fileID: 1413822770}
-  - component: {fileID: 1413822775}
   m_Layer: 0
   m_Name: Obstaculo
   m_TagString: Obstaculo
@@ -4944,27 +4902,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1413822775
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413822769}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1471055583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,7 +5207,6 @@ GameObject:
   - component: {fileID: 1531256144}
   - component: {fileID: 1531256143}
   - component: {fileID: 1531256142}
-  - component: {fileID: 1531256147}
   m_Layer: 0
   m_Name: Obstaculo
   m_TagString: Obstaculo
@@ -5376,27 +5312,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1531256147
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531256141}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1535883470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,7 +5459,6 @@ GameObject:
   - component: {fileID: 1539281032}
   - component: {fileID: 1539281031}
   - component: {fileID: 1539281030}
-  - component: {fileID: 1539281035}
   m_Layer: 0
   m_Name: Obstaculo
   m_TagString: Obstaculo
@@ -5650,27 +5564,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1539281035
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539281029}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1556768897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6093,7 +5986,6 @@ GameObject:
   - component: {fileID: 1685566822}
   - component: {fileID: 1685566821}
   - component: {fileID: 1685566825}
-  - component: {fileID: 1685566826}
   m_Layer: 0
   m_Name: Barra
   m_TagString: Barrita
@@ -6199,28 +6091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f42331e5c7104140941cece6338a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiaRecuperada: 5
---- !u!65 &1685566826
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685566820}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1713781787
 GameObject:
   m_ObjectHideFlags: 0
@@ -6418,7 +6288,6 @@ MonoBehaviour:
   panelDatosJugadores: {fileID: 788723523}
   inputNombre: {fileID: 1144492354}
   botonIniciar: {fileID: 1134497976}
-  barraEnergia: {fileID: 641783526}
   textoPuntaje: {fileID: 1292362219}
   textoCuentaRegresiva: {fileID: 53379857}
   textoNombreJugador: {fileID: 278220022}
@@ -6662,6 +6531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101566337}
+  - component: {fileID: 2101566338}
   m_Layer: 0
   m_Name: BarraEnergia
   m_TagString: Untagged
@@ -6689,6 +6559,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -512}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2101566338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101566336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2db69dbb33d0409f8d084f2acb613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraEnergia: {fileID: 641783526}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
