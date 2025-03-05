@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5118006860994189229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5693116507588915368}
+  - component: {fileID: 3046762013089595507}
+  - component: {fileID: 5664236917957716668}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5693116507588915368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118006860994189229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 403.18692, y: 253.72894, z: -0.027510906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3046762013089595507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118006860994189229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dfbbcc4d50a9df4f88b27ae5890084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camino: {fileID: 0}
+  posicionEscenaZ: 58
+--- !u!114 &5664236917957716668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118006860994189229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380b7ca119797b642b1bc2d89ca9ca6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelInicioSesion: {fileID: 0}
+  panelJuego: {fileID: 0}
+  panelDatosJugador: {fileID: 0}
+  panelDatosJugadores: {fileID: 0}
+  inputNombre: {fileID: 0}
+  botonIniciar: {fileID: 0}
+  textoPuntaje: {fileID: 0}
+  textoCuentaRegresiva: {fileID: 0}
+  textoNombreJugador: {fileID: 0}
+  textoBarritasJugador: {fileID: 0}
+  textoDistanciaJugador: {fileID: 0}
+  botonSalirInicio: {fileID: 0}
+  botonVerDatosJugadores: {fileID: 0}
+  botonRegresarInicio: {fileID: 0}
+  textoTop1: {fileID: 0}
+  textoTop2: {fileID: 0}
+  textoTop3: {fileID: 0}
+  botonRegresarPanelDatosJugador: {fileID: 0}

@@ -7,6 +7,7 @@ TagManager:
   - Suelo
   - Barrita
   - Obstaculo
+  - camino
   layers:
   - Default
   - TransparentFX
