@@ -6,12 +6,19 @@ using System.IO;
 public class GameController : MonoBehaviour
 {
     public static GameController instancia;
+    public Transform camino;
+    public int posicionEscenaZ = 58;
 
     private string nombreJugador;
     private float distanciaRecorrida;
     private int barritasRecogidas;
     private bool juegoIniciado = false;
 
+
+    private void Start()
+    {
+        Instantiate(camino, new Vector3(0.8f, 0.98f, -3.99f), camino.rotation);
+    }
     void Awake()
     {
         if (instancia == null)
@@ -23,6 +30,12 @@ public class GameController : MonoBehaviour
         if (juegoIniciado)
         {
             distanciaRecorrida += Time.deltaTime * 10;
+        }
+
+        if (posicionEscenaZ < 120)
+        {
+            Instantiate(camino, new Vector3(0.8f, 0.98f, posicionEscenaZ), camino.rotation);
+            posicionEscenaZ += 4;
         }
     }
 
@@ -58,5 +71,5 @@ public class GameController : MonoBehaviour
     public int GetBarritasRecogidas()
     {
         return barritasRecogidas;
-    }
+    }
 }
