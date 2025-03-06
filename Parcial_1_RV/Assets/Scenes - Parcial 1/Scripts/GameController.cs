@@ -1,41 +1,38 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.IO;
 
 public class GameController : MonoBehaviour
 {
     public static GameController instancia;
-    public Transform camino;
-    public int posicionEscenaZ = 58;
-
-    private string nombreJugador;
+    public Transform jugador;  // Referencia al jugador para obtener su posición real
+    private Vector3 posicionInicialJugador;
     private float distanciaRecorrida;
-    private int barritasRecogidas;
     private bool juegoIniciado = false;
 
+    private string nombreJugador;
+    private int barritasRecogidas;
 
-    private void Start()
-    {
-        Instantiate(camino, new Vector3(0.8f, 0.98f, -3.99f), camino.rotation);
-    }
     void Awake()
     {
         if (instancia == null)
             instancia = this;
     }
 
+    private void Start()
+    {
+        if (jugador != null)
+        {
+            posicionInicialJugador = jugador.position; // Guardamos la posición inicial
+        }
+    }
+
     void Update()
     {
-        if (juegoIniciado)
+        if (juegoIniciado && jugador != null)
         {
-            distanciaRecorrida += Time.deltaTime * 10;
-        }
-
-        if (posicionEscenaZ < 120)
-        {
-            Instantiate(camino, new Vector3(0.8f, 0.98f, posicionEscenaZ), camino.rotation);
-            posicionEscenaZ += 4;
+            // Calcula la distancia en función de la posición real en el eje Z
+            distanciaRecorrida = jugador.position.z - posicionInicialJugador.z;
         }
     }
 
@@ -45,6 +42,11 @@ public class GameController : MonoBehaviour
         juegoIniciado = true;
         distanciaRecorrida = 0;
         barritasRecogidas = 0;
+
+        if (jugador != null)
+        {
+            posicionInicialJugador = jugador.position; // Reiniciamos la posición inicial al iniciar el juego
+        }
     }
 
     public void RecogerBarrita()
@@ -71,5 +73,5 @@ public class GameController : MonoBehaviour
     public int GetBarritasRecogidas()
     {
         return barritasRecogidas;
-    }
+    }
 }
