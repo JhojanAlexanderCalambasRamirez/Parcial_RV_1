@@ -8,9 +8,6 @@ TagManager:
   - Barrita
   - Obstaculo
   - camino
-  - FxTemporaire
-  - Obstacle
-  - Obstcales
   - ParedLimite
   layers:
   - Default
