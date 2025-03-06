@@ -132,7 +132,7 @@ public class UIManager : MonoBehaviour
         Debug.Log("🏁 Juego terminado - Energía agotada o tiempo finalizado.");
 
         string nombre = inputNombre.text;
-        float distancia = GameController.instancia.GetDistancia(); // Obtenemos la distancia real recorrida
+        float distancia = Mathf.Abs(GameController.instancia.GetDistancia()); // Asegurar distancia positiva
         int barritas = puntaje;
 
         // Mostramos la información en la pantalla de resultados
@@ -144,6 +144,7 @@ public class UIManager : MonoBehaviour
         panelJuego.SetActive(false);
         panelDatosJugador.SetActive(true);
     }
+
 
 
     public void VolverInicio()

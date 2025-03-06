@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public static GameController instancia;
     public Transform jugador;  // Referencia al jugador para obtener su posición real
-    private Vector3 posicionInicialJugador;
+    private float posicionInicialX; // Guardamos la posición inicial en X
     private float distanciaRecorrida;
     private bool juegoIniciado = false;
 
@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
     {
         if (jugador != null)
         {
-            posicionInicialJugador = jugador.position; // Guardamos la posición inicial
+            posicionInicialX = jugador.position.x; // Guardamos la posición inicial en X
         }
     }
 
@@ -31,8 +31,8 @@ public class GameController : MonoBehaviour
     {
         if (juegoIniciado && jugador != null)
         {
-            // Calcula la distancia en función de la posición real en el eje Z
-            distanciaRecorrida = jugador.position.z - posicionInicialJugador.z;
+            // 🔹 Calcula la distancia recorrida en X
+            distanciaRecorrida = jugador.position.x - posicionInicialX;
         }
     }
 
@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour
 
         if (jugador != null)
         {
-            posicionInicialJugador = jugador.position; // Reiniciamos la posición inicial al iniciar el juego
+            posicionInicialX = jugador.position.x; // Reiniciamos la posición inicial en X
         }
     }
 
