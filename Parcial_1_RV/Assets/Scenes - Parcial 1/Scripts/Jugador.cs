@@ -1,17 +1,41 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
-    public float velocidad = 5f;
-    public float velocidadRotacion = 100f;
+    public float velocidadInicial = 5f; // Velocidad inicial del jugador
+    public float incrementoVelocidad = 0.1f; // Cuánto aumenta la velocidad por segundo
+    public float velocidadLateral = 4f; // Velocidad de movimiento lateral
+
+    private float velocidadActual; // Velocidad dinámica del jugador
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; // Evitar giros involuntarios
+        velocidadActual = velocidadInicial; // Se inicia con la velocidad base
+    }
 
     void Update()
     {
         if (!UIManager.instancia.EstaEnJuego()) return;
 
-        float movimientoHorizontal = Input.GetAxis("Horizontal") * velocidad * Time.deltaTime;
-        float movimientoVertical = Input.GetAxis("Vertical") * velocidad * Time.deltaTime;
+        // Incrementar la velocidad con el tiempo
+        velocidadActual += incrementoVelocidad * Time.deltaTime;
 
-        transform.Translate(movimientoHorizontal, 0, movimientoVertical);
+        // Movimiento automático hacia adelante
+        rb.MovePosition(rb.position + transform.forward * velocidadActual * Time.deltaTime);
+
+        // Movimiento lateral con teclas A y D
+        float movimientoLateral = Input.GetAxis("Horizontal") * velocidadLateral * Time.deltaTime;
+        rb.MovePosition(rb.position + transform.right * movimientoLateral);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("ParedLimite"))
+        {
+            Debug.Log("🚧 Colisión con pared - Movimiento bloqueado.");
+        }
     }
 }
