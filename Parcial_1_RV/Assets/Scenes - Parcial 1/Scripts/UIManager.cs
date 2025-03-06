@@ -75,12 +75,24 @@ public class UIManager : MonoBehaviour
             tiempoRestante -= Time.deltaTime;
             textoCuentaRegresiva.text = Mathf.CeilToInt(tiempoRestante).ToString();
 
+            // 🔹 Actualiza la distancia en tiempo real en la UI
+            float distancia = GameController.instancia.GetDistancia();
+            textoDistanciaJugador.text = $"{distancia:F2}m";
+            Debug.Log($"📏 Actualizando UI - Distancia mostrada: {distancia:F2}m");
+
             if (tiempoRestante <= 0 || ControladorSlider.instancia.GetEnergiaActual() <= 0)
             {
                 TerminarJuego();
             }
         }
     }
+
+
+
+
+
+
+
 
     public bool EstaEnJuego()
     {
@@ -132,10 +144,9 @@ public class UIManager : MonoBehaviour
         Debug.Log("🏁 Juego terminado - Energía agotada o tiempo finalizado.");
 
         string nombre = inputNombre.text;
-        float distancia = Mathf.Abs(GameController.instancia.GetDistancia()); // Asegurar distancia positiva
+        float distancia = GameController.instancia.GetDistancia(); // 🔹 Obtenemos la distancia recorrida correctamente
         int barritas = puntaje;
 
-        // Mostramos la información en la pantalla de resultados
         textoNombreJugador.text = nombre;
         textoDistanciaJugador.text = $"{distancia:F2}m"; // Se muestra con dos decimales
         textoBarritasJugador.text = barritas.ToString();
@@ -143,6 +154,8 @@ public class UIManager : MonoBehaviour
         GuardarPuntuacion(nombre, distancia, barritas);
         panelJuego.SetActive(false);
         panelDatosJugador.SetActive(true);
+
+        Debug.Log($"🏆 Distancia final mostrada en UI: {distancia:F2}m");
     }
 
 

@@ -1,12 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public static GameController instancia;
-    public Transform jugador;  // Referencia al jugador para obtener su posición real
-    private float posicionInicialX; // Guardamos la posición inicial en X
+    public Transform jugador;
+    private float posicionInicialX;
     private float distanciaRecorrida;
     private bool juegoIniciado = false;
 
@@ -23,7 +21,12 @@ public class GameController : MonoBehaviour
     {
         if (jugador != null)
         {
-            posicionInicialX = jugador.position.x; // Guardamos la posición inicial en X
+            posicionInicialX = jugador.position.x;
+            Debug.Log($"📍 Posición inicial del jugador en X: {posicionInicialX}");
+        }
+        else
+        {
+            Debug.LogError("🚨 No se ha asignado el jugador en GameController.");
         }
     }
 
@@ -31,8 +34,11 @@ public class GameController : MonoBehaviour
     {
         if (juegoIniciado && jugador != null)
         {
-            // 🔹 Calcula la distancia recorrida en X
-            distanciaRecorrida = jugador.position.x - posicionInicialX;
+            float nuevaPosicionX = jugador.position.x;
+            distanciaRecorrida = nuevaPosicionX - posicionInicialX;
+            distanciaRecorrida = Mathf.Max(distanciaRecorrida, 0); // Evita valores negativos
+
+            Debug.Log($"📏 Distancia recorrida: {distanciaRecorrida:F2}m (Posición X actual: {nuevaPosicionX})");
         }
     }
 
@@ -45,33 +51,19 @@ public class GameController : MonoBehaviour
 
         if (jugador != null)
         {
-            posicionInicialX = jugador.position.x; // Reiniciamos la posición inicial en X
+            posicionInicialX = jugador.position.x;
+            Debug.Log($"🔄 Nueva posición inicial en X: {posicionInicialX}");
         }
-    }
-
-    public void RecogerBarrita()
-    {
-        barritasRecogidas++;
-    }
-
-    public void TerminarJuego()
-    {
-        juegoIniciado = false;
-        UIManager.instancia.TerminarJuego();
-    }
-
-    public string GetNombreJugador()
-    {
-        return nombreJugador;
     }
 
     public float GetDistancia()
     {
+        if (jugador != null)
+        {
+            distanciaRecorrida = jugador.position.x - posicionInicialX;
+            distanciaRecorrida = Mathf.Max(distanciaRecorrida, 0);
+            Debug.Log($"📢 Distancia final antes de mostrar en UI: {distanciaRecorrida:F2}m");
+        }
         return distanciaRecorrida;
-    }
-
-    public int GetBarritasRecogidas()
-    {
-        return barritasRecogidas;
     }
 }

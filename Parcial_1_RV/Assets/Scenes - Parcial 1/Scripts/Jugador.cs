@@ -25,7 +25,7 @@ public class Jugador : MonoBehaviour
         velocidadActual += incrementoVelocidad * Time.deltaTime;
         rb.velocity = new Vector3(velocidadActual, 0, rb.velocity.z);
 
-        // 🔹 Movimiento lateral en Z con teclas A/D (corregido)
+        // 🔹 Movimiento lateral en Z con teclas A/D
         float movimientoLateral = Input.GetAxis("Horizontal") * velocidadLateral;
         rb.velocity = new Vector3(rb.velocity.x, 0, -movimientoLateral);
     }
@@ -46,14 +46,30 @@ public class Jugador : MonoBehaviour
         if (other.CompareTag("Barrita"))
         {
             Debug.Log("✅ Colisión con Barrita detectada. Aumentando energía...");
+
+            // 🔊 Obtener el AudioSource del objeto y reproducirlo antes de destruirlo
+            AudioSource sonido = other.GetComponent<AudioSource>();
+            if (sonido != null)
+            {
+                AudioSource.PlayClipAtPoint(sonido.clip, transform.position);
+            }
+
+            Destroy(other.gameObject); // 🔥 Se destruye inmediatamente
             UIManager.instancia.RecogerBarrita();
-            Destroy(other.gameObject); // Destruir la barrita después de recogerla
         }
         else if (other.CompareTag("Obstaculo"))
         {
             Debug.Log("❌ Colisión con Obstáculo detectada. Aplicando penalización...");
+
+            // 🔊 Obtener el AudioSource del objeto y reproducirlo antes de destruirlo
+            AudioSource sonido = other.GetComponent<AudioSource>();
+            if (sonido != null)
+            {
+                AudioSource.PlayClipAtPoint(sonido.clip, transform.position);
+            }
+
+            Destroy(other.gameObject); // 🔥 Se destruye inmediatamente
             ControladorSlider.instancia.ReducirEnergia(Random.Range(10f, 20f));
-            Destroy(other.gameObject); // Puedes aplicar un efecto antes de destruir
         }
     }
 
