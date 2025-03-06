@@ -2,15 +2,18 @@
 
 public class Barrita : MonoBehaviour
 {
-    public float velocidadRotacion = 50f;
-    public float amplitudMovimiento = 0.2f;
-    public float velocidadMovimiento = 2f;
+    public float velocidadRotacion = 150f;
+    public float amplitudMovimiento = 0.3f;
+    public float velocidadMovimiento = 5f;
 
+    public AudioClip sonidoRecoger; // Clip de sonido
+    private AudioSource audioSource;
     private Vector3 posicionInicial;
 
     void Start()
     {
         posicionInicial = transform.position;
+        audioSource = GetComponent<AudioSource>(); // Obtener el AudioSource del objeto
     }
 
     void Update()
@@ -29,7 +32,15 @@ public class Barrita : MonoBehaviour
         {
             Debug.Log("✅ Colisión con Barrita detectada. Aumentando energía y puntaje...");
             UIManager.instancia.RecogerBarrita();
-            Destroy(gameObject);
+
+            // Reproducir sonido
+            if (sonidoRecoger != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(sonidoRecoger);
+            }
+
+            // Destruir la barrita después de que el sonido termine
+            Destroy(gameObject, 0.2f); // Se destruye con un pequeño retraso para que el sonido se escuche
         }
     }
 }

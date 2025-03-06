@@ -38,4 +38,10 @@ public class Jugador : MonoBehaviour
             Debug.Log("🚧 Colisión con pared - Movimiento bloqueado.");
         }
     }
+
+    // 🔹 Método para obtener la velocidad actual y evitar el error
+    public float GetVelocidadActual()
+    {
+        return velocidadActual;
+    }
 }
