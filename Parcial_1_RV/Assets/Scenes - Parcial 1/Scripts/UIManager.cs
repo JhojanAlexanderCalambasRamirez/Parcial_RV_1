@@ -191,20 +191,41 @@ public class UIManager : MonoBehaviour
             listaPuntuaciones.RemoveAt(3);
         }
 
+        // 🔹 Definir la ruta específica dentro del proyecto
+        string directorio = Application.dataPath + "/Scenes - Parcial 1/JSON";
+
+        // 🔹 Asegurar que la carpeta existe
+        if (!Directory.Exists(directorio))
+        {
+            Directory.CreateDirectory(directorio);
+        }
+
+        string rutaArchivo = directorio + "/ranking.json";
+
         string json = JsonUtility.ToJson(new PuntuacionLista { puntuaciones = listaPuntuaciones }, true);
-        File.WriteAllText(Application.persistentDataPath + "/ranking.json", json);
+        File.WriteAllText(rutaArchivo, json);
+
+        Debug.Log($"📁 JSON guardado en: {rutaArchivo}");
     }
+
 
     void CargarPuntuaciones()
     {
-        string path = Application.persistentDataPath + "/ranking.json";
-        if (File.Exists(path))
+        string rutaArchivo = Application.dataPath + "/Scenes - Parcial 1/JSON/ranking.json";
+
+        if (File.Exists(rutaArchivo))
         {
-            string json = File.ReadAllText(path);
+            string json = File.ReadAllText(rutaArchivo);
             PuntuacionLista datos = JsonUtility.FromJson<PuntuacionLista>(json);
             listaPuntuaciones = datos.puntuaciones;
+            Debug.Log($"📂 Datos cargados desde: {rutaArchivo}");
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ No se encontró el archivo de ranking, se creará uno nuevo.");
         }
     }
+
 
     void MostrarRanking()
     {
