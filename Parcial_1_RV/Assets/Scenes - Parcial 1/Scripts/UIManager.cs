@@ -10,13 +10,18 @@ public class UIManager : MonoBehaviour
 
     [Header("Paneles")]
     public GameObject panelInicioSesion;
+    public GameObject panelTutorial;
     public GameObject panelJuego;
     public GameObject panelDatosJugador;
     public GameObject panelDatosJugadores;
 
     [Header("UI Inicio Sesión")]
     public TMP_InputField inputNombre;
-    public Button botonIniciar;
+    public TMP_InputField inputCorreo;
+    public Button botonTutorial;
+
+    [Header("UI Tutorial")]
+    public Button botonIniciarJuego;
 
     [Header("UI Juego")]
     public TMP_Text textoPuntaje;
@@ -26,6 +31,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text textoNombreJugador;
     public TMP_Text textoBarritasJugador;
     public TMP_Text textoDistanciaJugador;
+    public TMP_Text textoCorreoRanking;
     public Button botonSalirInicio;
     public Button botonVerDatosJugadores;
     public Button botonRegresarInicio;
@@ -52,11 +58,13 @@ public class UIManager : MonoBehaviour
         Debug.Log("🎮 Inicio del juego - UIManager cargado.");
 
         panelInicioSesion.SetActive(true);
+        panelTutorial.SetActive(false);
         panelJuego.SetActive(false);
         panelDatosJugador.SetActive(false);
         panelDatosJugadores.SetActive(false);
 
-        botonIniciar.onClick.AddListener(IniciarJuego);
+        botonTutorial.onClick.AddListener(MostrarTutorial);
+        botonIniciarJuego.onClick.AddListener(IniciarJuego);
         botonSalirInicio.onClick.AddListener(VolverInicio);
         botonVerDatosJugadores.onClick.AddListener(MostrarPanelDatosJugadores);
         botonRegresarPanelDatosJugador.onClick.AddListener(VolverPanelDatosJugador);
@@ -87,29 +95,29 @@ public class UIManager : MonoBehaviour
         }
     }
 
-
-
-
-
-
-
-
     public bool EstaEnJuego()
     {
         return juegoEnCurso;
     }
 
+    // 🔹 Método para mostrar el tutorial
+    public void MostrarTutorial()
+    {
+        panelInicioSesion.SetActive(false);
+        panelTutorial.SetActive(true);
+    }
+
     public void IniciarJuego()
     {
-        if (string.IsNullOrEmpty(inputNombre.text))
+        if (string.IsNullOrEmpty(inputNombre.text) || string.IsNullOrEmpty(inputCorreo.text))
         {
-            Debug.LogWarning("⚠️ ¡Debe ingresar un nombre antes de jugar!");
+            Debug.LogWarning("⚠️ ¡Debe ingresar un nombre y un correo antes de jugar!");
             return;
         }
 
-        Debug.Log($"▶️ Juego iniciado por {inputNombre.text}.");
+        Debug.Log($"▶️ Juego iniciado por {inputNombre.text} con correo {inputCorreo.text}");
 
-        panelInicioSesion.SetActive(false);
+        panelTutorial.SetActive(false);
         panelJuego.SetActive(true);
         juegoEnCurso = true;
         tiempoRestante = 40f;
@@ -123,13 +131,12 @@ public class UIManager : MonoBehaviour
     {
         Debug.Log("✅ Barrita recogida - Aumentando energía y puntaje.");
 
-        ControladorSlider.instancia.AumentarEnergia(5f);  // Aumentar energía
-        puntaje += 1;  // Sumar puntaje
-        textoPuntaje.text = puntaje.ToString();  // Actualizar TMP del puntaje
+        ControladorSlider.instancia.AumentarEnergia(5f);
+        puntaje += 1;
+        textoPuntaje.text = puntaje.ToString();
 
         Debug.Log($"🔋 Energía total: {ControladorSlider.instancia.GetEnergiaActual()}, Puntaje: {puntaje}");
     }
-
 
     public void ColisionObstaculo()
     {
@@ -144,21 +151,21 @@ public class UIManager : MonoBehaviour
         Debug.Log("🏁 Juego terminado - Energía agotada o tiempo finalizado.");
 
         string nombre = inputNombre.text;
-        float distancia = GameController.instancia.GetDistancia(); // 🔹 Obtenemos la distancia recorrida correctamente
+        string correo = inputCorreo.text;
+        float distancia = GameController.instancia.GetDistancia();
         int barritas = puntaje;
 
         textoNombreJugador.text = nombre;
-        textoDistanciaJugador.text = $"{distancia:F2}m"; // Se muestra con dos decimales
+        textoCorreoRanking.text = correo; // 🔹 Muestra el correo en el panel de datos del jugador
+        textoDistanciaJugador.text = $"{distancia:F2}m";
         textoBarritasJugador.text = barritas.ToString();
 
-        GuardarPuntuacion(nombre, distancia, barritas);
+        GuardarPuntuacion(nombre, correo, distancia, barritas);
         panelJuego.SetActive(false);
         panelDatosJugador.SetActive(true);
 
         Debug.Log($"🏆 Distancia final mostrada en UI: {distancia:F2}m");
     }
-
-
 
     public void VolverInicio()
     {
@@ -180,9 +187,9 @@ public class UIManager : MonoBehaviour
         panelDatosJugador.SetActive(true);
     }
 
-    void GuardarPuntuacion(string nombre, float distancia, int barritas)
+    void GuardarPuntuacion(string nombre, string correo, float distancia, int barritas)
     {
-        PuntuacionDatos nuevaPuntuacion = new PuntuacionDatos { nombre = nombre, distancia = distancia, barritas = barritas };
+        PuntuacionDatos nuevaPuntuacion = new PuntuacionDatos { nombre = nombre, correo = correo, distancia = distancia, barritas = barritas };
         listaPuntuaciones.Add(nuevaPuntuacion);
         listaPuntuaciones.Sort((a, b) => b.distancia.CompareTo(a.distancia));
 
@@ -191,10 +198,8 @@ public class UIManager : MonoBehaviour
             listaPuntuaciones.RemoveAt(3);
         }
 
-        // 🔹 Definir la ruta específica dentro del proyecto
         string directorio = Application.dataPath + "/Scenes - Parcial 1/JSON";
 
-        // 🔹 Asegurar que la carpeta existe
         if (!Directory.Exists(directorio))
         {
             Directory.CreateDirectory(directorio);
@@ -207,7 +212,6 @@ public class UIManager : MonoBehaviour
 
         Debug.Log($"📁 JSON guardado en: {rutaArchivo}");
     }
-
 
     void CargarPuntuaciones()
     {
@@ -227,7 +231,9 @@ public class UIManager : MonoBehaviour
     }
 
 
-    void MostrarRanking()
+
+
+void MostrarRanking()
     {
         Debug.Log("📊 Mostrando ranking...");
 
@@ -252,6 +258,7 @@ public class UIManager : MonoBehaviour
 public class PuntuacionDatos
 {
     public string nombre;
+    public string correo;
     public float distancia;
     public int barritas;
 }
@@ -261,4 +268,3 @@ public class PuntuacionLista
 {
     public List<PuntuacionDatos> puntuaciones;
 }
-
