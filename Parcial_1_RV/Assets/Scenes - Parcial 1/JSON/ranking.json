@@ -1,0 +1,16 @@
+{
+    "puntuaciones": [
+        {
+            "nombre": "sdfsd",
+            "correo": "alex@gmail.com",
+            "distancia": 167.95468139648438,
+            "barritas": 2
+        },
+        {
+            "nombre": "asdas",
+            "correo": "asdasd",
+            "distancia": 49.564117431640628,
+            "barritas": 2
+        }
+    ]
+}

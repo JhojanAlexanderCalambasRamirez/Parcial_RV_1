@@ -502,7 +502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &13922438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -829,7 +832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &22165050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1274,7 +1280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &28442213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1650,7 +1659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &34380634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1795,7 +1807,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &39492356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2009,7 +2024,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &41745687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2652,7 +2670,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &67345395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3112,7 +3133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &83318296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3621,7 +3645,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &96261719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4204,7 +4231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &100915836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4749,7 +4779,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &116879379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5535,7 +5568,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &134330792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6159,7 +6195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &156969084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6390,7 +6429,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &161400585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6816,7 +6858,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &169952532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7704,7 +7749,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &198173591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8665,7 +8713,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &210073914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8869,6 +8920,8 @@ GameObject:
   - component: {fileID: 211461083}
   - component: {fileID: 211461082}
   - component: {fileID: 211461081}
+  - component: {fileID: 211461085}
+  - component: {fileID: 211461084}
   m_Layer: 0
   m_Name: Button_IniciarJuego
   m_TagString: Untagged
@@ -8978,6 +9031,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211461079}
   m_CullTransparentMesh: 1
+--- !u!114 &211461084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211461079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962115b5949e0f24ebad7a68f7dd2f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidoBoton: {fileID: 8300000, guid: 6a901082be23fbc4194cfb72533414ed, type: 3}
+--- !u!82 &211461085
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211461079}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6a901082be23fbc4194cfb72533414ed, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &212725517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
@@ -9091,7 +9253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &224708169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9634,7 +9799,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &236007747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10462,7 +10630,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &268140639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10878,7 +11049,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &281089546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11431,7 +11605,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &292489195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12771,7 +12948,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &327718032
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13204,7 +13384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &335238016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13791,7 +13974,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &348911887
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15020,7 +15206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &393589944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15582,7 +15771,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &406819725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15864,7 +16056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &414954735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16751,7 +16946,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &436116601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17261,7 +17459,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &446759435
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17951,7 +18152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &472429656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19845,7 +20049,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &544784782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19990,7 +20197,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &547338009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21564,7 +21774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &577969369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21906,7 +22119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &583988531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24006,7 +24222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &624450569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24215,7 +24434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &625559858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26087,7 +26309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &681826595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29080,7 +29305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &754091283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29587,7 +29815,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &763861362
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30827,7 +31058,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &802653298
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31847,6 +32081,134 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &836796793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836796795}
+  - component: {fileID: 836796794}
+  m_Layer: 0
+  m_Name: Sonido Obstaculos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &836796794
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836796793}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6a901082be23fbc4194cfb72533414ed, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 256
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &836796795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836796793}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 29.250458, y: -29.502317, z: -7.4158883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1915435522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &844676054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32013,7 +32375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &850950003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32578,7 +32943,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &863895379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34046,7 +34414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &883428248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34277,7 +34648,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &887554052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34417,7 +34791,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &890936968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34797,7 +35174,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &896252250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35247,7 +35627,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &905476038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35461,7 +35844,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &911441516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35765,7 +36151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &916213429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35905,7 +36294,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &916904829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36110,7 +36502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &925272869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36250,7 +36645,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &925987813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36746,7 +37144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &954084611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39458,7 +39859,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1027338819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39663,7 +40067,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1029000195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41209,7 +41616,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1061721034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41507,7 +41917,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1066656055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41921,7 +42334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1079878054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42310,7 +42726,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1096551752
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42616,7 +43035,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1113805151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42847,7 +43269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &1113944299
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43325,7 +43750,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1122016799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43694,6 +44122,134 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 32.894802, y: 22.006735, z: 25.880531}
   m_Center: {x: 1.8633819, y: 11.003367, z: 6.2327113}
+--- !u!1 &1127798556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127798557}
+  - component: {fileID: 1127798558}
+  m_Layer: 0
+  m_Name: Sonido Boton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127798557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127798556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1915435522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1127798558
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127798556}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6a901082be23fbc4194cfb72533414ed, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 256
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1128288622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45130,7 +45686,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1147505508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45505,7 +46064,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1153488310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46301,7 +46863,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1169073773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47680,7 +48245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1187119315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47820,7 +48388,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1187917004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48534,7 +49105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1198324395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48674,7 +49248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1198599918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49729,7 +50306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1226571570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50438,7 +51018,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1244749975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50817,7 +51400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1261525488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50988,7 +51574,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1265681155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51337,7 +51926,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1275280903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51621,7 +52213,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1288233707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52642,7 +53237,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &1325137885
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53617,7 +54215,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1357886614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53757,7 +54358,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1359732076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54020,7 +54624,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1370674285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54520,7 +55127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1378738975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54739,7 +55349,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1379731792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55340,7 +55953,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1404990750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55480,7 +56096,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1405644876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56192,7 +56811,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1426065024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56332,7 +56954,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1429146530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56472,7 +57097,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1429676066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57040,7 +57668,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1442659249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57249,7 +57880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f42331e5c7104140941cece6338a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoRecoger: {fileID: 8300000, guid: fcc37ee0ecd89d746b1d19f874f3c84b, type: 3}
+  sonidoRecoger: {fileID: 1445087515}
 --- !u!4 &1445087508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3325791964408504549, guid: 9aaf52fce2e472c428b3649bcc1d719a, type: 3}
@@ -58243,7 +58874,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1468382834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58585,7 +59219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1472879480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58799,7 +59436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1473439301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58939,7 +59579,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1473768815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59698,7 +60341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1485900053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61183,7 +61829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f42331e5c7104140941cece6338a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoRecoger: {fileID: 8300000, guid: fcc37ee0ecd89d746b1d19f874f3c84b, type: 3}
+  sonidoRecoger: {fileID: 1530779709}
 --- !u!82 &1530779709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -61732,7 +62378,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1548864906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62455,7 +63104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1566918432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62945,7 +63597,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1573744578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63373,7 +64028,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1588046427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63770,7 +64428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1595271564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64870,7 +65531,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1624471968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65371,7 +66035,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1629063475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65612,7 +66279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1641669611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65752,7 +66422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1642082257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66038,7 +66711,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1651266899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66178,7 +66854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1652672155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66897,7 +67576,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1666584900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67414,7 +68096,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1680161554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67623,7 +68308,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1683307956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67832,7 +68520,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1688063515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69927,7 +70618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1751143372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70203,7 +70897,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1757923216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70487,7 +71184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1771713005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70713,7 +71413,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &1775242667
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71093,7 +71796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1786205006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71264,7 +71970,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1789426533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72479,7 +73188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1830221203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72828,7 +73540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1833629743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73063,7 +73778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!82 &1834069246
 AudioSource:
   m_ObjectHideFlags: 0
@@ -73535,7 +74253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1842059801
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74649,7 +75370,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1873910492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75015,7 +75739,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1885333311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75448,7 +76175,9 @@ Transform:
   m_LocalPosition: {x: 302.61102, y: 49.605316, z: 4.634173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 836796795}
+  - {fileID: 1127798557}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1916507125
@@ -76063,7 +76792,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1943435132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76396,7 +77128,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1952332655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77184,7 +77919,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1980660711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77324,7 +78062,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &1981156527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80183,7 +80924,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &2064182805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81176,7 +81920,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 0
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &2086422481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81803,7 +82550,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b978977858e01bf4c9addf549c884e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoColision: {fileID: 8300000, guid: c56d15cac47a0cc4983b8f1167d15335, type: 3}
+  activarCrecimiento: 1
+  factorCrecimiento: 1.2
+  frecuenciaCrecimiento: 2
+  sonidoColision: {fileID: 836796794}
 --- !u!65 &2110672891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83731,15 +84481,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
     - target: {fileID: 8357727900807801551, guid: d4eeca1a6b9d3b34a9e2ef8a7056c39a, type: 3}
       propertyPath: m_Color.b
-      value: 0.73333335
+      value: 0.02767825
       objectReference: {fileID: 0}
     - target: {fileID: 8357727900807801551, guid: d4eeca1a6b9d3b34a9e2ef8a7056c39a, type: 3}
       propertyPath: m_Color.g
-      value: 0.69411767
+      value: 0.7433963
       objectReference: {fileID: 0}
     - target: {fileID: 8357727900807801551, guid: d4eeca1a6b9d3b34a9e2ef8a7056c39a, type: 3}
       propertyPath: m_Color.r
-      value: 0.34509805
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8661125146123298414, guid: d4eeca1a6b9d3b34a9e2ef8a7056c39a, type: 3}
       propertyPath: m_AnchoredPosition.y

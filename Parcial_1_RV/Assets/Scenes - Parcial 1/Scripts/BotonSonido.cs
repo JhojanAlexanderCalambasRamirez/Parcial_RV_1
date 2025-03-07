@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class BotonSonido : MonoBehaviour
 {
+    [Header("Configuración de Sonido")]
     public AudioClip sonidoBoton; // Sonido asignado desde el inspector
     private AudioSource audioSource;
 
@@ -15,9 +16,11 @@ public class BotonSonido : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-        // Asignar propiedades al AudioSource
+        // Configurar el AudioSource
         audioSource.playOnAwake = false; // Que no suene al iniciar
-        audioSource.volume = 0.5f; // Ajusta el volumen si es necesario
+        audioSource.volume = 1f; // Ajusta el volumen (puedes cambiarlo si es necesario)
+        audioSource.mute = false; // Asegurar que no está silenciado
+        audioSource.enabled = true; // Habilitar el AudioSource por si acaso
 
         // Agregar la función al botón
         Button boton = GetComponent<Button>();
@@ -27,19 +30,27 @@ public class BotonSonido : MonoBehaviour
         }
         else
         {
-            Debug.LogError("🚨 No se encontró un componente Button en " + gameObject.name);
+            Debug.LogError($"🚨 No se encontró un componente Button en {gameObject.name}");
         }
     }
 
     void ReproducirSonido()
     {
+        Debug.Log($"🔊 Intentando reproducir sonido en {gameObject.name}");
+
         if (sonidoBoton != null)
         {
-            audioSource.PlayOneShot(sonidoBoton); // Reproducir sonido asignado
+            if (!audioSource.enabled)
+            {
+                audioSource.enabled = true; // Habilita el AudioSource si está desactivado
+            }
+
+            audioSource.PlayOneShot(sonidoBoton);
+            Debug.Log("✅ Sonido reproducido correctamente.");
         }
         else
         {
-            Debug.LogWarning("⚠️ No se ha asignado un sonido al botón " + gameObject.name);
+            Debug.LogWarning($"⚠️ No se ha asignado un sonido al botón {gameObject.name}");
         }
     }
 }
