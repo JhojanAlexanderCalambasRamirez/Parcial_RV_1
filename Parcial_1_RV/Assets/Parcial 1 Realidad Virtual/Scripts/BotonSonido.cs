@@ -9,18 +9,21 @@ public class BotonSonido : MonoBehaviour
 
     void Start()
     {
-        // Verificar si hay un AudioSource en el botón, si no, agregarlo
+        // Buscar si hay un AudioSource en el objeto, si no hay, agregar uno
         audioSource = gameObject.GetComponent<AudioSource>();
+
         if (audioSource == null)
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
+            Debug.LogWarning($"⚠️ No se encontró un AudioSource en {gameObject.name}, agregando uno nuevo...");
+            audioSource = gameObject.AddComponent<AudioSource>(); // Agregar un nuevo AudioSource
         }
 
         // Configurar el AudioSource
-        audioSource.playOnAwake = false; // Que no suene al iniciar
-        audioSource.volume = 1f; // Ajusta el volumen (puedes cambiarlo si es necesario)
-        audioSource.mute = false; // Asegurar que no está silenciado
-        audioSource.enabled = true; // Habilitar el AudioSource por si acaso
+        audioSource.playOnAwake = false;
+        audioSource.volume = 1f;
+        audioSource.mute = false;
+        audioSource.enabled = true; // 🔹 Forzar activación
+        audioSource.loop = false;
 
         // Agregar la función al botón
         Button boton = GetComponent<Button>();
@@ -38,13 +41,23 @@ public class BotonSonido : MonoBehaviour
     {
         Debug.Log($"🔊 Intentando reproducir sonido en {gameObject.name}");
 
+        // 🔹 Forzar la activación del AudioSource ANTES de reproducir el sonido
+        if (audioSource == null)
+        {
+            Debug.LogError($"❌ Error: No hay AudioSource en {gameObject.name}, agregando uno nuevo...");
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.volume = 1f;
+        }
+
+        if (!audioSource.enabled)
+        {
+            Debug.LogWarning($"⚠️ AudioSource en {gameObject.name} estaba desactivado. Se ha reactivado.");
+            audioSource.enabled = true;
+        }
+
         if (sonidoBoton != null)
         {
-            if (!audioSource.enabled)
-            {
-                audioSource.enabled = true; // Habilita el AudioSource si está desactivado
-            }
-
             audioSource.PlayOneShot(sonidoBoton);
             Debug.Log("✅ Sonido reproducido correctamente.");
         }

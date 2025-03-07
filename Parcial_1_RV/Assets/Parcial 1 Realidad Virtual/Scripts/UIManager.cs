@@ -140,7 +140,7 @@ public class UIManager : MonoBehaviour
 
     public void ColisionObstaculo()
     {
-        float danio = Random.Range(10f, 20f);
+        float danio = Random.Range(5f, 10f);
         Debug.Log($"❌ Colisión con Obstáculo - Daño recibido: {danio}");
         ControladorSlider.instancia.ReducirEnergia(danio);
     }
