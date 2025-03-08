@@ -3,56 +3,74 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.IO;
-
+/// <summary>
+/// Clase encargada de la gestión de la interfaz de usuario (UI) en el juego.
+/// Se ocupa de manejar los paneles de navegación, actualizar los datos del jugador en la interfaz,
+/// gestionar la lógica del juego (como el puntaje y el tiempo), y almacenar el ranking en un archivo JSON.
+/// </summary>
 public class UIManager : MonoBehaviour
 {
+    // 🔹 Singleton para facilitar el acceso desde otros scripts
     public static UIManager instancia;
 
+    // ======================== 📌 PANELES DE LA INTERFAZ 📌 ========================
     [Header("Paneles")]
-    public GameObject panelInicioSesion;
-    public GameObject panelTutorial;
-    public GameObject panelJuego;
-    public GameObject panelDatosJugador;
-    public GameObject panelDatosJugadores;
+    public GameObject panelInicioSesion;     // Panel donde el jugador introduce su nombre y correo.
+    public GameObject panelTutorial;         // Panel con el tutorial del juego.
+    public GameObject panelJuego;            // Panel que muestra la UI en tiempo real durante la partida.
+    public GameObject panelDatosJugador;     // Panel con los datos finales del jugador.
+    public GameObject panelDatosJugadores;   // Panel donde se muestra el ranking de los jugadores.
 
+    // ======================== 📌 UI DEL INICIO DE SESIÓN 📌 ========================
     [Header("UI Inicio Sesión")]
-    public TMP_InputField inputNombre;
-    public TMP_InputField inputCorreo;
-    public Button botonTutorial;
+    public TMP_InputField inputNombre;   // Campo de texto para el nombre del jugador.
+    public TMP_InputField inputCorreo;   // Campo de texto para el correo del jugador.
+    public Button botonTutorial;         // Botón para acceder al tutorial.
 
+    // ======================== 📌 UI DEL TUTORIAL 📌 ========================
     [Header("UI Tutorial")]
-    public Button botonIniciarJuego;
+    public Button botonIniciarJuego;     // Botón dentro del tutorial que inicia la partida.
 
+    // ======================== 📌 UI DEL JUEGO 📌 ========================
     [Header("UI Juego")]
-    public TMP_Text textoPuntaje;
-    public TMP_Text textoCuentaRegresiva;
+    public TMP_Text textoPuntaje;         // Muestra el puntaje del jugador en tiempo real.
+    public TMP_Text textoCuentaRegresiva; // Muestra el tiempo restante en el juego.
 
+    // ======================== 📌 UI DE DATOS DEL JUGADOR 📌 ========================
     [Header("UI Datos Jugador")]
-    public TMP_Text textoNombreJugador;
-    public TMP_Text textoBarritasJugador;
-    public TMP_Text textoDistanciaJugador;
-    public TMP_Text textoCorreoRanking;
-    public Button botonSalirInicio;
-    public Button botonVerDatosJugadores;
-    public Button botonRegresarInicio;
+    public TMP_Text textoNombreJugador;   // Muestra el nombre del jugador en el panel de resultados.
+    public TMP_Text textoCorreoRanking;   // Muestra el correo del jugador en el ranking.
+    public TMP_Text textoBarritasJugador; // Muestra la cantidad de barritas recogidas.
+    public TMP_Text textoDistanciaJugador;// Muestra la distancia recorrida.
+    public Button botonSalirInicio;       // Botón para volver al inicio.
+    public Button botonVerDatosJugadores; // Botón para ver el ranking de jugadores.
+    public Button botonRegresarInicio;    // Botón para regresar al inicio desde el ranking.
 
+    // ======================== 📌 UI DEL RANKING 📌 ========================
     [Header("UI Datos Jugadores (Ranking)")]
-    public TMP_Text textoTop1;
-    public TMP_Text textoTop2;
-    public TMP_Text textoTop3;
-    public Button botonRegresarPanelDatosJugador;
+    public TMP_Text textoTop1; // Muestra el primer puesto del ranking.
+    public TMP_Text textoTop2; // Muestra el segundo puesto del ranking.
+    public TMP_Text textoTop3; // Muestra el tercer puesto del ranking.
+    public Button botonRegresarPanelDatosJugador; // Botón para volver a los datos del jugador.
 
-    private float tiempoRestante = 40f;
-    private int puntaje;
-    private bool juegoEnCurso = false;
-    private List<PuntuacionDatos> listaPuntuaciones = new List<PuntuacionDatos>();
+    // ======================== 📌 VARIABLES INTERNAS 📌 ========================
+    private float tiempoRestante = 40f;    // Tiempo total del juego en segundos.
+    private int puntaje;                   // Puntaje del jugador.
+    private bool juegoEnCurso = false;     // Indica si el juego está activo.
+    private List<PuntuacionDatos> listaPuntuaciones = new List<PuntuacionDatos>(); // Lista con el ranking.
 
+    /// <summary>
+    /// Se ejecuta antes de `Start()`. Asigna la instancia de UIManager.
+    /// </summary>
     void Awake()
     {
         if (instancia == null)
             instancia = this;
     }
 
+    /// <summary>
+    /// Inicializa la UI, desactiva paneles innecesarios y configura eventos de los botones.
+    /// </summary>
     void Start()
     {
         Debug.Log("🎮 Inicio del juego - UIManager cargado.");

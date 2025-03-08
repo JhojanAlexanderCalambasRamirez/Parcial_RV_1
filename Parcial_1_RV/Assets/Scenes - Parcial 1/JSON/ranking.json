@@ -1,22 +1,22 @@
 {
     "puntuaciones": [
         {
+            "nombre": "asdsad",
+            "correo": "asdasdzxvc",
+            "distancia": 428.2013244628906,
+            "barritas": 20
+        },
+        {
             "nombre": "dsfdf",
             "correo": "cvzxvv",
             "distancia": 408.2732238769531,
             "barritas": 20
         },
         {
-            "nombre": "asda",
-            "correo": "asdvv",
-            "distancia": 168.71755981445313,
-            "barritas": 4
-        },
-        {
-            "nombre": "dsd",
-            "correo": "sdfsd",
-            "distancia": 166.68838500976563,
-            "barritas": 8
+            "nombre": "cascasc",
+            "correo": "ascasczc",
+            "distancia": 389.5993957519531,
+            "barritas": 20
         }
     ]
 }
