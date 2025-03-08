@@ -1,6 +1,12 @@
 {
     "puntuaciones": [
         {
+            "nombre": "Alexander",
+            "correo": "alex@gmail.com",
+            "distancia": 640.8331298828125,
+            "barritas": 18
+        },
+        {
             "nombre": "asdsad",
             "correo": "asdasdzxvc",
             "distancia": 428.2013244628906,
@@ -10,12 +16,6 @@
             "nombre": "dsfdf",
             "correo": "cvzxvv",
             "distancia": 408.2732238769531,
-            "barritas": 20
-        },
-        {
-            "nombre": "cascasc",
-            "correo": "ascasczc",
-            "distancia": 389.5993957519531,
             "barritas": 20
         }
     ]

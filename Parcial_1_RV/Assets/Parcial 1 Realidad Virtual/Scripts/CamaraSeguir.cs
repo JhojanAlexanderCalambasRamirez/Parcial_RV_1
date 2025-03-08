@@ -14,8 +14,8 @@ public class CamaraSeguir : MonoBehaviour
     private Vector3 posicionInicial; // 🔹 Almacena la posición inicial de la cámara
 
     [Header("Parámetros de Movimiento")]
-    public float amplitud = 0.02f; // 🔹 Cantidad de movimiento en Y (oscilación)
-    public float frecuencia = 1.5f; // 🔹 Velocidad del movimiento oscilante
+    public float amplitud = 0.04f; // 🔹 Cantidad de movimiento en Y (oscilación)
+    public float frecuencia = 1.7f; // 🔹 Velocidad del movimiento oscilante
 
     /// <summary>
     /// Método `Start()`.

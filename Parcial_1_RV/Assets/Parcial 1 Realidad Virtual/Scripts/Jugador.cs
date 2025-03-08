@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections; // 📌 Necesario para usar Corrutinas
 
 /// <summary>
 /// Clase encargada de manejar el comportamiento del jugador.
 /// Controla el movimiento en el eje X y la velocidad lateral en el eje Z.
-/// También gestiona colisiones con objetos como barritas y obstáculos.
+/// También gestiona colisiones con barritas y obstáculos.
 /// </summary>
 public class Jugador : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Jugador : MonoBehaviour
 
     private float velocidadActual;  // 🔹 Variable que almacena la velocidad dinámica del jugador.
     private Rigidbody rb;  // 🔹 Componente Rigidbody para manejar la física del jugador.
+    private Renderer jugadorRenderer; // 🔹 Componente Renderer para cambiar el color del jugador.
 
     /// <summary>
     /// Método `Start()`. Se ejecuta una sola vez al inicio del juego.
@@ -23,6 +25,7 @@ public class Jugador : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();  // 🔹 Obtiene el componente Rigidbody del jugador.
+        jugadorRenderer = GetComponent<Renderer>(); // 🔹 Obtiene el Renderer del jugador.
 
         // 🔹 Se desactiva la gravedad para que el jugador no caiga.
         rb.useGravity = false;
@@ -99,6 +102,9 @@ public class Jugador : MonoBehaviour
 
             // 🔹 Se actualiza la energía y el puntaje en la UI.
             UIManager.instancia.RecogerBarrita();
+
+            // 🟢 Inicia el efecto de energía (se pinta de verde temporalmente).
+            StartCoroutine(FlashGreen());
         }
 
         // ======================== 📌 COLISIÓN CON OBSTÁCULO 📌 ========================
@@ -118,10 +124,35 @@ public class Jugador : MonoBehaviour
 
             // 🔹 Se reduce la energía del jugador con un daño aleatorio entre 10 y 20.
             ControladorSlider.instancia.ReducirEnergia(Random.Range(10f, 20f));
+
+            // 🔴 Inicia el efecto de daño (se pinta de rojo temporalmente).
+            StartCoroutine(FlashRed());
         }
     }
 
     // ======================== 📌 MÉTODOS AUXILIARES 📌 ========================
+
+    /// <summary>
+    /// Corrutina que cambia el color del jugador a rojo temporalmente
+    /// para dar feedback visual cuando recibe daño.
+    /// </summary>
+    private IEnumerator FlashRed()
+    {
+        jugadorRenderer.material.color = Color.red; // 🔴 Cambia a rojo
+        yield return new WaitForSeconds(0.5f); // ⏳ Espera medio segundo
+        jugadorRenderer.material.color = Color.white; // ⚪ Restaura el color original
+    }
+
+    /// <summary>
+    /// Corrutina que cambia el color del jugador a verde temporalmente
+    /// para dar feedback visual cuando recoge una barrita.
+    /// </summary>
+    private IEnumerator FlashGreen()
+    {
+        jugadorRenderer.material.color = Color.green; // 🟢 Cambia a verde
+        yield return new WaitForSeconds(0.5f); // ⏳ Espera medio segundo
+        jugadorRenderer.material.color = Color.white; // ⚪ Restaura el color original
+    }
 
     /// <summary>
     /// Método para obtener la velocidad actual del jugador.
